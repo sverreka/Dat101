@@ -10,8 +10,30 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>In part 1, is it possible to solve the problem using a single "for" loop?</li>
+      <p>Yes it is possible to solve the problem using a single "for" loop. You can see my solution as proof.</p>
+      <li>In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?
+        Describe what would or would not be necessary to achieve this. Provide a thorough explanation of
+        your answer.</li>
+      <p>An infinite while loop occurs when there is no exit condition in the statement.</p>
+      <p>To create an infinite loop using the "while" condition you only have to give it a statement such as 
+        while (1+1===2) {
+          printOut("Hello World!");
+        }
+        As long as 1+1 = 2 it will continously print out the message "Hello World!" infinitly until manually stopped since it has no exit statement.
+      </p>
+      <p>Another example is in part 2 when the variable guess in the while loop infinitely changes value until it matches the target variable. In this case the exit statement is when it matches the target since the while loop's condition is to run as long as guess is not equal to target</p>
+      <li>Discuss briefly how quickly or slowly a computer might be able to compute this, considering the
+        number of guesses and the time it takes. How does the program behave while it is guessing? Can
+        the program perform other tasks concurrently?</li>
+      <p>In part 2 a computer can compute the guess in under a millisecond. A good proof of this is in part 3 where the target number is guessed between 1 and 1000000. You can see that in a matter of a few milliseconds it has done multiple hundred thousand guesses.</p>
+      <p>The program behaves fast and clean while guessing since the calculations done are very small and efficient.</p>
+      <p>The program we made cannot perform other tasks concurrently since it is not programmed to do so, but is possible as long as the system supports multi-threading.</p>
+      <li>Explain the relationship between rows and columns in nested "for" loops. Can we, for instance,
+        change the order, considering rows to be innermost or columns to be innermost, or does this not
+        matter?</li>
+      <p>In a neste for loop such as the one in the task. the outer loop represents one dimension, while the inner loop represents another.</p>
+      <p>It is possible to change the order of the loops, and in our instance since rows are typically horizontal and colums vertical the right thing would be to change the order of the loops.</p>
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
