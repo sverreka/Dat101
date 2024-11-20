@@ -10,8 +10,31 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>What is an array? A short and concise answer is expected here!</li>
+      <p>An array is a data structure that stores a set value of the same elements tie to set indexes.</p>
+      <li>What does it mean to "hardcode" when we talk about programming? (In English, it's called "hard
+        coding", "hard-coding", or "hardcoding").</li>
+      <p>By hard coding we mean that instead of assigning values to variables so we can reuse them we instead "hardcode" them in to the code directly.</p>
+      <li>Explain in plain text what happens in task 3, and how we can traverse (iterate) the array when we
+        (humans) don't "know" how long the array is.</li>
+      <p>In part 3 a string is defined. the split method is then used to split the string into an array using a set delimiter. It then prints out the words seperatly
+        and tells the word number, the word index and the word itself by a for loop. By using the .length function we can determine the length of the array. </p>
+      <li>Why is it beneficial to store instances of a class in arrays, as in task 4?</li>
+      <p>By storing instances of a class in an array makes it possible to use functions to handle the data in a more efficient and structured way, there are also other benefits as allowing iteration and scalability</p>
+      <p>The EWeekDays object store days of the week with a value (bitwise) and name. Each day get a unique number (like, Monday = 0x01, Tuesday = 0x02, etc.). Workdays and weekends combine days using their values. So, Workdays add up Monday to Friday values, and Weekends add Saturday and Sunday.
+
+        If we want "WorkoutDays" (Monday, Wednesday, and Thursday), we just add their values: 0x01 + 0x04 + 0x08, that makes 0x0D. So, WorkoutDays looks like this:
+        
+        WorkoutDays: { value: 0x0D, name: "Treningsdager" }
+        
+        This makes it easy to combine and check days using bitwise operations.
+      </p>
+      <li>
+        In task 8, we will use a "callback" routine when sorting. Explain how such a "callback" routine works.
+      </li>
+      <p>
+        A callback routine in sorting is a function passed to sort(), which defines how two elements should be compared to determine their order.
+      </p>
     </ol>
     <script type="module" src="./task_4-2.mjs" defer></script>
   </body>
